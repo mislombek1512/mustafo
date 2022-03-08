@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+section {
+    padding: 50px 0;
+}
+
+.container {
+    max-width: 1140px;
+    margin: auto;
+}
+
+.d-flex {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.col {
+    width: 550px;
+}
+
+.img img {
+    width: 100%;
+    border-radius: 60px;
+}
+
+.about h2 {
+    font-weight: 500;
+    font-size: 45px;
+    color: #0F1F1C;
+}
+
+.mycard {
+    width: 400px;
+    margin: 40px 0;
+}
+
+.mycard img {
+    background: #FFAA99;
+    border-radius: 71.5px;
+    width: 134px;
+    height: 134px;
+}
+
+.mycard h4 {
+    font-weight: 500;
+    font-size: 33px;
+    color: #0F1F1C;
+    margin-bottom: 10px;
+}
+
+.mycard p {
+    font-size: 25px;
+    font-weight: 400;
+    color: #0F1F1C;
+    opacity: 0.5;
+}
+
+.about p {
+    font-weight: 500;
+    font-size: 22px;
+    color: #0F1F1C;
+    margin-bottom: 30px;
+}
+
+.star {
+    color: #FFD336;
+    font-size: 35px;
+}
+
+/* media start */
+/* col-xl */
+@media(min-width: 1200px) {}
+
+/* col-lg */
+@media(min-width: 992px) and (max-width:1199px) {
+    .col{
+        width: calc(100%/12*6);
+        padding: 0 20px;
+    }
+}
+
+/* col-md */
+@media(min-width: 768px) and (max-width:991px) {
+    .col{
+        width: calc(100%/12*6);
+        padding: 0 20px;
+    }
+
+}
+
+/* col-sm */
+@media(min-width: 576px) and (max-width:767px) {
+    section {
+        padding: 0 20px ;
+    }
+    .col {
+        width: 100%;
+    }
+}
+
+/* col */
+@media(max-width: 575px) {
+    section {
+        padding: 0 20px ;
+    }
+    .col {
+        width: 100%;
+    }
+}
+
+/* media end */
